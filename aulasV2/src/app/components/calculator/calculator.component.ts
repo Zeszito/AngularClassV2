@@ -9,6 +9,23 @@ export class CalculatorComponent implements OnInit {
 
   constructor() { }
 
+  /*
+  valor1 = 100;
+  updateVal(e){
+    this.valor1 = e.target.value;
+  }*/
+
+  valor1=0;
+  valor2 = 0;
+  sinal = "";
+
+  resultado;
+
+  calcula(){
+    //this.resultado = Number(this.valor1) + Number(this.valor2);
+    this.resultado =  eval(this.valor1+ this.sinal +this.valor2);
+  }
+
   ngOnInit(): void {
   }
 
